@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Project 3 : TV time</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1>Project 3: TV Time</h1>
+    <p>
+    Authors: Nachiket Dighe, Saumick Pradhan, Ameya Deshmukh, Om Gaikwad    
+    </p>
+    <div class="flexContainer">
+        <div class="container" id="overview">
+            <h2>Show Overview</h2>
+            <div id="showOverview"></div>
+        </div>
+        <div class="container" id="overallCharacters">
+            <h2>Overall Characters</h2>
+            <div id="overallCharactersChart"></div>
+        </div>
+        <div class="container" id="selectedSeason">
+            <h2>Selected Season Characters</h2>
+            <select id="seasonDropdown"></select>
+            <div id="selectedSeasonChart"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="flexContainer">
+        <div class="container" id="episodes">
+            <h2>Number of Episodes Characters Appear In</h2>
+            <div id="episodesChart"></div>
+        </div>
+        <div class="container" id="lines">
+            <h2>Lines Spoken by Characters</h2>
+            <div id="linesChart"></div>
+        </div>
+    </div>
+
+    </body>
+</html>
