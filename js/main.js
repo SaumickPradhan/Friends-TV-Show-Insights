@@ -79,20 +79,54 @@ function plotOverallCharacters(data) {
     const characters = data.map((row) => row.Character);
     const episodes = data.map((row) => row.Episodes);
 
-    const trace = {
-        x: characters,
-        y: episodes,
-        type: 'bar'
-    };
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 800 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
-    const layout = {
-        title: 'Number of Episodes Characters Appear In (Overall)',
-        xaxis: { title: 'Character' },
-        yaxis: { title: 'Number of Episodes' }
-    };
+    const svg = d3.select("#overallCharactersChart")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    const config = { responsive: true };
-    Plotly.newPlot('overallCharactersChart', [trace], layout, config);
+    const x = d3.scaleBand()
+        .domain(characters)
+        .range([0, width])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(episodes)])
+        .range([height, 0]);
+
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+    svg.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", (d) => x(d.Character))
+        .attr("width", x.bandwidth())
+        .attr("y", (d) => y(d.Episodes))
+        .attr("height", (d) => height - y(d.Episodes))
+        .style("fill", "steelblue");
+
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .text("Number of Episodes Characters Appear In (Overall)");
 }
 
 // Function to plot selected season characters bar chart
@@ -102,20 +136,54 @@ function plotSelectedSeason(data, season) {
     const characters = charactersData.map((row) => row.Character);
     const episodes = charactersData.map((row) => row.Episodes);
 
-    const trace = {
-        x: characters,
-        y: episodes,
-        type: 'bar'
-    };
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 800 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
-    const layout = {
-        title: `Number of Episodes Characters Appear In (Season ${season})`,
-        xaxis: { title: 'Character' },
-        yaxis: { title: 'Number of Episodes' }
-    };
+    const svg = d3.select("#selectedSeasonChart")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    const config = { responsive: true };
-    Plotly.newPlot('selectedSeasonChart', [trace], layout, config);
+    const x = d3.scaleBand()
+        .domain(characters)
+        .range([0, width])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(episodes)])
+        .range([height, 0]);
+
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+    svg.selectAll(".bar")
+        .data(charactersData)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", (d) => x(d.Character))
+        .attr("width", x.bandwidth())
+        .attr("y", (d) => y(d.Episodes))
+        .attr("height", (d) => height - y(d.Episodes))
+        .style("fill", "steelblue");
+
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .text(`Number of Episodes Characters Appear In (Season ${season})`);
 }
 
 // Function to plot number of episodes characters appear in
@@ -124,20 +192,54 @@ function plotEpisodes(data) {
     const characters = Object.keys(episodesCount);
     const episodes = Object.values(episodesCount);
 
-    const trace = {
-        x: characters,
-        y: episodes,
-        type: 'bar'
-    };
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 800 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
-    const layout = {
-        title: 'Number of Episodes Characters Appear In (Overall)',
-        xaxis: { title: 'Character' },
-        yaxis: { title: 'Number of Episodes' }
-    };
+    const svg = d3.select("#episodesChart")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    const config = { responsive: true };
-    Plotly.newPlot('episodesChart', [trace], layout, config);
+    const x = d3.scaleBand()
+        .domain(characters)
+        .range([0, width])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(episodes)])
+        .range([height, 0]);
+
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+    svg.selectAll(".bar")
+        .data(characters)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", (d) => x(d))
+        .attr("width", x.bandwidth())
+        .attr("y", (d, i) => y(episodes[i]))
+        .attr("height", (d, i) => height - y(episodes[i])) 
+        .style("fill", "steelblue");
+
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .text("Number of Episodes Characters Appear In (Overall)");
 }
 
 // Function to plot lines spoken by characters
@@ -146,21 +248,56 @@ function plotLines(data) {
     const characters = Object.keys(linesCount);
     const lines = Object.values(linesCount);
 
-    const trace = {
-        x: characters,
-        y: lines,
-        type: 'bar'
-    };
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const width = 800 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
-    const layout = {
-        title: 'Lines Spoken by Characters (Overall)',
-        xaxis: { title: 'Character' },
-        yaxis: { title: 'Number of Lines' }
-    };
+    const svg = d3.select("#linesChart")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    const config = { responsive: true };
-    Plotly.newPlot('linesChart', [trace], layout, config);
+    const x = d3.scaleBand()
+        .domain(characters)
+        .range([0, width])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(lines)])
+        .range([height, 0]);
+
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+    svg.selectAll(".bar")
+        .data(characters)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", (d) => x(d))
+        .attr("width", x.bandwidth())
+        .attr("y", (d, i) => y(lines[i]))
+        .attr("height", (d, i) => height - y(lines[i]))
+        .style("fill", "steelblue");
+
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .text("Lines Spoken by Characters (Overall)");
 }
+
 
 // Function to create an overview of the show
 function showOverview(data) {
