@@ -253,6 +253,9 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
       episodeSelect.property("value", defaultEpisode);
       arcDiagram.updateVis(selectedSeason, defaultEpisode);
       updateBarChart(selectedSeason, defaultEpisode); // Update bar chart
+      updateCharacterLinesChart(selectedSeason, defaultEpisode);
+
+
 
     });
     
@@ -263,6 +266,8 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
       const selectedEpisode = +this.value;
       arcDiagram.updateVis(selectedSeason, selectedEpisode);
       updateBarChart(selectedSeason, defaultEpisode); // Update bar chart
+      updateCharacterLinesChart(selectedSeason, defaultEpisode);
+
 
     });
     
@@ -393,5 +398,110 @@ updateBarChart(1, 1); // Default to Season 1, Episode 1
 //   arcDiagram.updateVis(initialSeason, initialEpisode);
 
 // });
-});
 
+
+// Function to create the bar chart for character lines
+function createCharacterLinesChart(characterData) {
+  const margin = { top: 10, right: 30, bottom: 65, left: 60 };
+  const width = 600 - margin.left - margin.right;
+  const height = 300 - margin.top - margin.bottom;
+  
+  const svg = d3.select("#character-lines-chart")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+  
+  const x = d3.scaleBand()
+    .domain(characterData.map(d => d.character))
+    .range([0, width])
+    .padding(0.1);
+  
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(characterData, d => d.lines)])
+    .nice()
+    .range([height, 0]);
+  
+  const xAxis = d3.axisBottom(x);
+  const yAxis = d3.axisLeft(y);
+  
+  svg.append("g")
+    .attr("class", "x-axis")
+    .attr("transform", `translate(0,${height})`)
+    .call(xAxis)
+    .selectAll("text")
+    .style("text-anchor", "end")
+    .attr("dx", "-.8em")
+    .attr("dy", ".15em")
+    .attr("transform", "rotate(-45)");
+  
+  // X-axis label
+  svg.append("text")
+    .attr("class", "x-label")
+    .attr("x", width / 2)
+    .attr("y", height + margin.bottom +1)
+    .style("text-anchor", "middle")
+    .text("Characters");
+  
+  svg.append("g")
+    .attr("class", "y-axis")
+    .call(yAxis);
+  
+  // Y-axis label
+  svg.append("text")
+    .attr("class", "y-label")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -height / 2)
+    .attr("y", -margin.left + 20)
+    .style("text-anchor", "middle")
+    .text("No. of Lines Spoken in selected episode");
+  
+  svg.selectAll(".bar")
+    .data(characterData)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", d => x(d.character))
+    .attr("y", d => y(d.lines))
+    .attr("width", x.bandwidth())
+    .attr("height", d => height - y(d.lines))
+    .attr("fill", "#69b3a2");
+    
+}
+
+// Function to update the character lines bar chart
+function updateCharacterLinesChart(selectedSeason, selectedEpisode) {
+  const filteredData = jsonData.filter(
+    d => d.season === selectedSeason && d.episode === selectedEpisode
+  );
+
+  const characters = ["Rachel Green", "Ross Geller", "Monica Geller", "Chandler Bing", "Joey Tribbiani", "Phoebe Buffay"];
+
+  const characterLines = characters.map(character => {
+    const lines = filteredData.filter(d => d.speaker === character).length;
+    return { character: character, lines: lines };
+  });
+
+  // Remove existing character lines chart if it exists
+  d3.select("#character-lines-chart svg").remove();
+
+  createCharacterLinesChart(characterLines);
+}
+
+// Call updateCharacterLinesChart initially
+updateCharacterLinesChart(1, 1); // Default to Season 1, Episode 1
+
+// Event listeners for season and episode changes
+// seasonSelect.on("change", function() {
+//   const selectedSeason = +this.value;
+//   const selectedEpisode = +episodeSelect.property("value");
+//   updateCharacterLinesChart(selectedSeason, selectedEpisode);
+// });
+
+// episodeSelect.on("change", function() {
+//   const selectedSeason = +seasonSelect.property("value");
+//   const selectedEpisode = +this.value;
+//   updateCharacterLinesChart(selectedSeason, selectedEpisode);
+// });
+
+});
