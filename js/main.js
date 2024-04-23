@@ -102,6 +102,34 @@ function plotLines(data, season) {
         .attr("height", (d, i) => height - y(lines[i]))
         .style("fill", "red");
 
+    const tooltip = d3.select("#linesChart")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "10px");
+
+    const mouseover = function(event, d) {
+        tooltip.style("opacity", 1);
+    };
+    const mousemove = function(event, d) {
+        tooltip.html(`${d}: ${linesCount[d]}`)
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY + 10) + "px");
+    };
+    const mouseleave = function(event, d) {
+        tooltip.style("opacity", 0);
+    };
+
+    svg.selectAll(".bar")
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
+
     svg.append("text")
         .attr("x", width / 2)
         .attr("y", 0 - (margin.top / 2))
@@ -172,6 +200,34 @@ function plotEpisodes(data, characterEpisodeData, season) {
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("fill", "blue");
+
+    const tooltip = d3.select("#episodesChart")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "10px");
+
+    const mouseover = function(event, d) {
+        tooltip.style("opacity", 1);
+    };
+    const mousemove = function(event, d) {
+        tooltip.html(`Episode ${d.episode_number}: ${d.lines} lines`)
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY + 10) + "px");
+    };
+    const mouseleave = function(event, d) {
+        tooltip.style("opacity", 0);
+    };
+
+    svg.selectAll(".tile")
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
 
     svg.append("text")
         .attr("x", width / 2)
@@ -294,7 +350,7 @@ function plotOverallCharacters(data) {
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
         .style("text-decoration", "underline")
-        .text("Main Characters: Lines Spoken");
+        .text("Main Characters: Lines Spoken Throughout the Show");
 
     // Add the x-axis label
     svg.append("text")
@@ -329,7 +385,8 @@ async function main() {
     seasonDropdown.addEventListener('change', (event) => {
         const selectedSeason = event.target.value;
         document.getElementById('seasonTitle').innerText = selectedSeason;
-        document.getElementById('seasonTitleEpisodes').innerText = selectedSeason;
+        document.getElementById('seasonTitleLines').innerText = `Lines Spoken by Characters (Top 6) in Season ${selectedSeason}`;
+        document.getElementById('seasonTitleEpisodes').innerText = `Episodes Characters Appear In Season ${selectedSeason}`;
         plotSelectedSeason(data, selectedSeason);
     });
 }
