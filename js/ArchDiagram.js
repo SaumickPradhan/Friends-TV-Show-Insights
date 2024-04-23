@@ -57,26 +57,7 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
         .attr("class", "detail-section")
         .style("visibility", "hidden");
     
-      vis.seasonColors = [
-        "#EC4E20",
-        "#FFBD0A",
-        "#0E76A8",
-        "#55A860",
-        "#D8AB86",
-        "#874D92",
-        "#6E7F80",
-        "#A06545",
-        "#F0C05A",
-        "#E76F51",
-      ];
-      vis.mainCharacters = [
-        "Joey Tribbiani",
-        "Chandler Bing",
-        "Monica Geller",
-        "Phoebe Buffay",
-        "Ross Geller",
-        "Rachel Green",
-      ];
+
     
       // Call updateVis initially
       vis.updateVis(1, 1); // Default to Season 1, Episode 1
