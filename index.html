@@ -58,11 +58,24 @@
         <option value="Monica">Monica</option>
         <option value="Ross">Ross</option>
         <option value="Chandler">Chandler</option>
-        <option value="Pheobe">Pheobe</option>
-
-
+        <option value="Phoebe">Phoebe</option>
+        <option value="Rachel">Rachel</option>
 
     </select>
+
+        <label for="character-select1">Select Character:</label>
+        <select id="character-select1">
+            <option value="Monica">Monica</option>
+            <option value="Joey">Joey</option>
+            <option value="Ross">Ross</option>
+            <option value="Chandler">Chandler</option>
+            <option value="Phoebe">Phoebe</option>
+            <option value="Rachel">Rachel</option>
+
+            </select>   
+
+
+
     <div id = "word-cloud">
         <h3 id="word-cloud-title"> Word Cloud for Joey</h3>
 
@@ -71,7 +84,16 @@
     <h3 id="word-cloud-title1"> Frequently used words by Joey</h3>
     <div id="horizontal-bar-chart"></div> 
     
-    <audio controls loop autoplay id="audioPlayer">
+    <div id = "word-cloud1">
+        <h3 id="word-cloud-title2"> Word Cloud for Monica</h3>
+
+    </div>
+
+    <h3 id="word-cloud-title3"> Frequently used words by Monica</h3>
+    <div id="horizontal-bar-chart1"></div> 
+
+    <br> <br>
+    <audio controls loop autoplay id="audioPlayer" hidden="True">
         <source src="data/friends-theme-song-made-with-Voicemod.mp3" type="audio/mp3">
     </audio>
 
