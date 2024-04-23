@@ -1,0 +1,24 @@
+/* Set styles for the SVG container */
+#network-graph {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Set styles for links */
+.link {
+  stroke-width: 2px;
+}
+
+/* Set styles for nodes */
+.node {
+  fill: steelblue;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+/* Set styles for node labels */
+.label {
+  fill: black;
+  font-family: Arial, sans-serif;
+}
