@@ -4,11 +4,6 @@
     gap: 10px;
   }
 
-.container {
-    width: 500px;
-    height: 300px;
-    background-color: black;
-}
 
 .tooltip {
   position: absolute;
@@ -18,10 +13,22 @@
 }
 
 
-#word-cloud {
-  max-width: 100%; /* Ensure the word cloud width doesn't exceed the screen width */
-  max-height: 100%; /* Ensure the word cloud height doesn't exceed the screen height */
-  overflow: auto; /* Add scrollbar if the word cloud exceeds the screen dimensions */
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align items at the start of the cross axis */
+  gap: 20px; /* Adjust the gap between items as needed */
+}
+
+#word-cloud, #word-cloud1 {
+  width: 50%; /* Adjust the width of word clouds as needed */
+  max-width: 100%; /* Ensure the word cloud width doesn't exceed the container width */
+}
+
+#horizontal-bar-chart, #horizontal-bar-chart1 {
+  width: 50%; /* Adjust the width of bar charts as needed */
+  max-width: 100%; /* Ensure the bar chart width doesn't exceed the container width */
 }
 
 .bar {
