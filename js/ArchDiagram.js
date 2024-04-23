@@ -265,9 +265,8 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
       const selectedSeason = +seasonSelect.property("value");
       const selectedEpisode = +this.value;
       arcDiagram.updateVis(selectedSeason, selectedEpisode);
-      updateBarChart(selectedSeason, defaultEpisode); // Update bar chart
-      updateCharacterLinesChart(selectedSeason, defaultEpisode);
-
+      updateBarChart(selectedSeason, selectedEpisode); // Update bar chart
+      updateCharacterLinesChart(selectedSeason, selectedEpisode);
 
     });
     
@@ -494,8 +493,8 @@ updateCharacterLinesChart(1, 1); // Default to Season 1, Episode 1
 // Event listeners for season and episode changes
 // seasonSelect.on("change", function() {
 //   const selectedSeason = +this.value;
-//   const selectedEpisode = +episodeSelect.property("value");
-//   updateCharacterLinesChart(selectedSeason, selectedEpisode);
+  // const selectedEpisode = +episodeSelect.property("value");
+  // updateCharacterLinesChart(selectedSeason, selectedEpisode);
 // });
 
 // episodeSelect.on("change", function() {
