@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -16,6 +13,30 @@
         <script src="js/d3.v6.min.js" ></script>
         <script src="https://d3js.org/d3-cloud.v1.min.js"></script>
 
+        <style>
+            /* Add CSS styles here */
+            .link {
+              fill: none;
+              stroke: #000;
+              stroke-opacity: 0.6;
+            }
+        
+            .node {
+              font: 10px sans-serif;
+            }
+        
+            .node:hover {
+              cursor: pointer;
+            }
+        
+            .text-background {
+              fill: white;
+            }
+        
+            .text-label {
+              pointer-events: none;
+            }
+          </style>
 
     </head>
     <body>
@@ -26,20 +47,29 @@
     <p>
     Authors: Nachiket Dighe, Saumick Pradhan, Ameya Deshmukh, Om Gaikwad    
     </p>
-    <div class="flexContainer">
+    <!-- <div class="flexContainer">
         <div class="container">
-            <div id = "word-cloud">
 
             </div>
         </div>
         <div class="container">
         </div>
         <div class="container">
+            
         </div>
-    </div>
+    </div> -->
 
     <br>
-
+    <div class="filter">
+        <label for="season-select">Select Season:</label>
+        <select id="season-select"></select>
+        <label for="episode-select">Select Episode:</label>
+        <select id="episode-select"></select>
+    </div>
+    <div id="heatmap"></div>
+    <div id="arcdiagram"></div>
+    
+<!-- 
     <div class="flexContainer">
         <div class="container">
         </div>
@@ -47,9 +77,12 @@
         </div>
         <div class="container">
         </div>
-    </div>
+    </div> -->
 
         <script src="js/main.js" ></script>
 
+        <script src="js/HeatMap.js" ></script>
+        <script src="js/ArchDiagram.js" ></script>
+        <script src="js/d3.v6.min.js"></script>
     </body>
 </html>
