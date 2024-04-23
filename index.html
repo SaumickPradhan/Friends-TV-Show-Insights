@@ -12,31 +12,8 @@
         <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
         <script src="js/d3.v6.min.js" ></script>
         <script src="https://d3js.org/d3-cloud.v1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 
-        <style>
-            /* Add CSS styles here */
-            .link {
-              fill: none;
-              stroke: #000;
-              stroke-opacity: 0.6;
-            }
-        
-            .node {
-              font: 10px sans-serif;
-            }
-        
-            .node:hover {
-              cursor: pointer;
-            }
-        
-            .text-background {
-              fill: white;
-            }
-        
-            .text-label {
-              pointer-events: none;
-            }
-          </style>
 
     </head>
     <body>
@@ -67,22 +44,45 @@
         <select id="episode-select"></select>
     </div>
     <div id="heatmap"></div>
+    <br>
+    <br>
     <div id="arcdiagram"></div>
-    
-<!-- 
-    <div class="flexContainer">
-        <div class="container">
-        </div>
-        <div class="container">
-        </div>
-        <div class="container">
-        </div>
-    </div> -->
 
-        <script src="js/main.js" ></script>
+    <div id="bar-chart"></div>
+    <div id="tooltip" style="position: absolute; opacity: 0; pointer-events: none;"></div>
+
+
+    <label for="character-select">Select Character:</label>
+    <select id="character-select">
+        <option value="Joey">Joey</option>
+        <option value="Monica">Monica</option>
+        <option value="Ross">Ross</option>
+        <option value="Chandler">Chandler</option>
+        <option value="Pheobe">Pheobe</option>
+
+
+
+    </select>
+    <div id = "word-cloud">
+        <h3 id="word-cloud-title"> Word Cloud for Joey</h3>
+
+    </div>
+
+    <h3 id="word-cloud-title1"> Frequently used words by Joey</h3>
+    <div id="horizontal-bar-chart"></div> 
+    
+    <audio controls loop autoplay id="audioPlayer">
+        <source src="data/friends-theme-song-made-with-Voicemod.mp3" type="audio/mp3">
+    </audio>
+
+
 
         <script src="js/HeatMap.js" ></script>
         <script src="js/ArchDiagram.js" ></script>
         <script src="js/d3.v6.min.js"></script>
+        <script src="js/song.js"></script>
+        <script src="js/pieChart.js"></script>
+        <script src="js/main.js" ></script>
+
     </body>
 </html>

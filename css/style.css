@@ -9,3 +9,69 @@
     height: 300px;
     background-color: black;
 }
+
+.tooltip {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+#word-cloud {
+  max-width: 100%; /* Ensure the word cloud width doesn't exceed the screen width */
+  max-height: 100%; /* Ensure the word cloud height doesn't exceed the screen height */
+  overflow: auto; /* Add scrollbar if the word cloud exceeds the screen dimensions */
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: #69b3a2;
+}
+
+.x-axis path {
+  display: none;
+}
+
+.y-axis path,
+.y-axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.y-axis text {
+  font-size: 12px;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.6;
+}
+        
+.node {
+  font: 10px sans-serif;
+}
+        
+.node:hover {
+  cursor: pointer;
+}
+        
+.text-background {
+  fill: white;
+}
+        
+.text-label {
+  pointer-events: none;
+}
+
+.x-label {
+  font-size: 14px;
+}
+
+.y-label {
+  font-size: 14px;
+}

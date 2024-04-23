@@ -161,13 +161,15 @@ class HeatMap {
       .attr("fill", (d) => getColorForCharacterLines(d.linesSpoken))
       .on("mouseover", function (event, d) {
         d3.select(this)
-          .attr("stroke-width", "2")
-          .attr("stroke", "black");
-        vis.tooltip.style("visibility", "visible").html(`
-            <div class="tooltip-title">S${d.seasonNum}E${d.episodeNum}: ${d.episodeName}</div>
-            <div>${getTooltipContent(d.linesSpoken)}</div>
-          `);
-      })
+            .attr("stroke-width", "2")
+            .attr("stroke", "black");
+        vis.tooltip
+            .style("visibility", "visible")
+            .html(`
+                <div class="tooltip-title">S${d.seasonNum}E${d.episodeNum}: ${d.episodeName}</div>
+                <div>${getTooltipContent(d.linesSpoken)}</div>
+            `);
+    })
       .on("mousemove", function (event) {
         vis.tooltip
           .style("top", `${event.pageY - 10}px`)
