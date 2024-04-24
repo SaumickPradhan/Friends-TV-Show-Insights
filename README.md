@@ -2,17 +2,17 @@
 
 
 
-**A Interactive Data Visualization exploring various ascpects of the Hit TV show Friends. It helps the audience understand  the characters, how the characters interact, what they characters tend to say, and how these patterns change over the run of the show**
+**A Interactive Data Visualization exploring various ascpects of the Hit TV show Friends. It helps the audience understand  the characters, how the characters interact, what they characters tend to say, and how these patterns change over the run of the show.**
+<img width="323" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/4e32d897-c555-4291-95a4-b2a25e97f6fc">![newApr-24-202400-16-19-ezgif com-video-to-gif-converter](https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/9554eadf-1683-420e-b4d1-caec30d4c295)
 
-![Apr-04-2024 19-19-53](https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/cc42723e-2cdb-4bfb-a6f0-bf79d8daa628)
 
-<h2>Description</h2>
+<h2>Description NACHIKET TO COMPLETE</h2>
 
 In our project, "UFO Sightings in United States: The Truth is out there" , we embarked on a journey to explore and visualize a comprehensive dataset compiled by the National UFO Reporting Center. This dataset, spanning over a century of reports from around the world, offers a unique window into the collective human experience with the unexplained aerial phenomena. We filtered the comprehensive dataset to provide us with information about UFO sightings in the United States, and used that to analyze the data and displayed it using a Leaflet map, along with 4 charts and a word cloud.
 
 <h2>Video Presentation</h2>
 
-https://youtu.be/_gbEaazZpM8
+https://www.youtube.com/watch?v=2hE0KSeTbSc&t=4s
 
 <h2>Check It Out</h2>
 
@@ -50,7 +50,7 @@ Methods used for preprocessing:
 Please find all the data preprocessing scripts and data files in the /data folder.  Various resources helped us get different aspect of the project. We used different files for different visualizations. 
 
 <details>
-<summary><b>Following are the attributes used:</b></summary>
+<summary><b>Following are the attributes used</b></summary>
 
 | Entity           | Class   | Description                                       |
 |------------------|---------|---------------------------------------------------|
@@ -71,7 +71,7 @@ Please find all the data preprocessing scripts and data files in the /data folde
 
 
  <details>
-  <summary><b>Motivation of the Project</b></summary>
+  <summary><b>Motivation of the Project NACHIKET TO COMPLETE</b></summary>
 
 The motivation for this project was to contribute to the knowledge about the existance of Extraterrestrial activity
 and contribute to the documentation and analysis of this cultural phenomenon, adding to the body of knowledge available for researchers, enthusiasts, and the curious alike. We also wanted to hone our data analysis skills in front-end frameworks like D3.Js and Leaflet.js along with using python to analyze and clean the dataset. This data also has first-hand encounters from real people via a reputable
@@ -97,7 +97,7 @@ website.
 NACHIKET TO COMPLETE
 
 **A goals**
-NACHIKET TO COMPLETE
+NACHIKET TO COMPLETE MORE
 
 <img width="660" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/16327b12-a5dd-4660-8a30-634b9f31cdf2">
 
@@ -131,7 +131,7 @@ NACHIKET TO COMPLETE
   <summary><b>2. Character, their popularity, influence in the show</b> </summary>
   
   <b>Graph which shows the popularity of the Character is a particular Episode</b>
-  
+    **Reason:** Helps the user understand which character is prominant in a particular episode and season. They can shoose to watch one with their favourite character.
 <img width="568" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/35cbc43b-1bc8-479b-b32b-210b0544a827">
 
 
@@ -146,7 +146,7 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 
 
 <details>
-  <summary><b>4. Select Attributes</b> </summary>
+  <summary><b>4. Select Season and Episode</b> </summary>
   <b>  Dynamic dropdown to select season and episode from that season. The Arc Diagram, Popularity bar graph and emotions bar graphs are Linked</b>
 
 
@@ -156,7 +156,9 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 <details>
   <summary><b>5. Series Road Map with Popularity Heat Map</b> </summary>
   <b> Helps the user see the road map for the show, find out interesting episodes, their popularity based on Ratings by viewers talking about them "lines spoken" </b>
-
+ 
+ **Reason:** Helps users select which episode they want to watch based on popularity.
+ 
 <img width="1006" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/22457ca8-8fde-4e02-bec8-703dd631c806">
 
 </details>
@@ -164,100 +166,55 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 
 
 <details>
-  <summary><b>Inter Character Interaction per Episode with Arc Diagram</b> </summary>
-  <b> An Arc diagram to show relation between different characters in the selected episode </b>
-
-
+  <summary><b>6. Inter Character Interaction per Episode with Arc Diagram</b> </summary>
+  <b> An Arc diagram to show relation between different characters in the selected episode. 
+   
+  **Reason:** We decided to also include supporting characters to show interesting charaters in each episode and how they interate with the main characters. A Tool tip shows the interactions of the character with other characters and the scenes they are together.</b>
 
 <img width="1197" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/ca2a5810-9d8e-47a4-88c4-8cbabd66a6bb">
 
-
 </details>
 
+
+<details>
+  <summary><b>7. Emotions between Characters in selected episode</b> </summary>
+
+  
+  <b> Bar chart for showing general emotions of characters in a particular episode.</b>
+
+  **Reason:** This is really intereting as the users can filter which episode to watch based on the general emotion in the episode between charactes.
+
+<img width="580" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/01b975fe-2c9d-4b41-ab27-27c7f9b642de">
+
+</details>
 
 
 
 <details>
-  <summary><b>7. New Views</b> </summary>
- <details>
-  <summary><b> (B Goals) Bar chart for sightings by Months, depicting seasons</b></summary>
+<summary><b>8. Select Two Characters</b></summary>
+<b>Select the characters you want to focus on</b>
+<img width="400" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/c41ad58f-eb6d-48e8-a554-23425c548b0b">
 
-  **Reason:** We did not have different colors for seasons as different places have different seasons. Wanted to depict clear frequency change hence decided to go with bar chart.
+<img width="1459" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/cb4635ec-b460-4688-a3a4-6448ed174a42">
 
-<img width="737" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/cdc689d2-f753-442b-8041-b349f4986fa1">
-
-</details>
-
- <details>
-  <summary><b> (B Goals) Histogram chart for frequency of sightings different times during the day</b></summary>
-
-  **Reason:** Histogram helps with coninuous time intervals throughout the day. 24 hour timing used as it is universal.
-
-<img width="1083" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/80c649ab-f2f5-4ce0-bb9f-6dec58bd80cf">
 
 </details>
 
- <details>
-  <summary><b> (B Goals) Histogram chart for frequency of sightings by encounter length</b></summary>
 
-  **Reason:** Handled very short durations by clubbing them into custom sections (bars) of intervals
+<details>
+<summary><b>9. Word cloud and graph for the top words spoken by the selected character</b></summary>
+<b>Shows the top used words and thier frequency for the selected character</b>
 
-<img width="1167" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/6c3a665f-594f-4ee1-b055-2e34d5188cf8">
-
-</details>
-
- <details>
-  <summary><b> (B Goals) Emoji based scatter plot to track frequency of occurance of different shapes</b></summary>
-
-  **Reason:** We wanted the user to see the different shapes represented in the plot to be intuitive.
-
-<img width="1066" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/14d3a6e7-75ec-4a8c-8b59-41a6e03f2f87">
-
-</details>
+<img width="1459" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/cb4635ec-b460-4688-a3a4-6448ed174a42">
 
 </details>
 
 <details>
-<summary><b>8. Details on Demand using Tool Tip</b></summary>
-<b>Hovering over the Map and Word Cloud will provide extra information about that data point</b>
- 
-<img width="560" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/531bcd7e-f162-4947-8d22-147d6fd02170">
+<summary><b>10. Comparing interactions with another character</b></summary>
+<b>Shows the top used words between the selected characters in conversation with each other. First plot starts of as solo interaction.</b>
 
-<img width="255" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/b2882914-3370-4ca0-b919-345b9fa4494d">
+<img width="1395" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/0a255085-ed36-469a-9d16-c6207a8d9274">
 
-<img width="205" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/54ed41ba-4e25-47c9-8b82-dd1e77c2650a">
-
-</details>
-
-<details>
-<summary><b>9. Sliding Brushing and Linking Map</b></summary>
-<b> (A Goals) Brushing Map by Selecting and dragging a section on the Time line or any of the 4 Plots will lead to focusing the data on only a certain section on Map</b>
-
-<img width="1078" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/9e2254d3-9458-448a-a5fb-7d0dab87ac4f">
-
-<img width="705" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/4c6ec01f-7661-438d-93f7-c26526791b17">
-
-<img width="1119" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/c8ef1fa3-89a1-46bc-a967-35db0f53c1c1">
-
-<img width="1186" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/16577899-7ab8-4b76-ae03-c38cf68e7d57">
-
-<img width="1075" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/332a850c-666c-4480-854b-7e7f721ee489">
-
-**Reason:** 
-* Becasue of the large dataset of shapes, it is slow to load the data. Hence brushing here is slow.
-* Professor said it is not easy to use the default brush with D3 hence we came up with alternatives to brush by timeline
-
-<img width="343" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/cbb43c47-9e5a-4e4d-b293-d91282b4cd19">
-
-<b> (A Goals) Word Cloud to brush the Map</b>
-
-**Reason:** 
-* click on the words in the word cloud to see their spatial location and frequency in the map. the word cloud has tool tips and is colors by size. it brushes the map. 
-
-<img width="1169" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/9ddaaee5-0e6b-4425-bc0b-f503eddd0f8d">
-
- 
-</details>
 </details>
 
 
@@ -265,43 +222,48 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 <h2>Interesting Findings from the Application</h2>
 
 <details>
-<summary><b>Recent Increase in Sightings</b></summary>
-<b>It is interesting to note that the number of sightings have increased recently. Maybe due to increased airplanes, drones, people might assume them to be UFOs.</b>
-<img width="638" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/a015a9f5-ccaf-4904-9710-a06509f9cd8b">
-</details>
+<summary><b>Popularity of Monica</b></summary>
+<b>Even though the story does not evlove around Monica, she is the most popular character in the show throughout episodes</b>
 
-<details>
-<summary><b>More sightings at night</b></summary>
-  
-<b>More sigthings seen at night, as shining objects, shooting stars and other entities are often confused with UFOs</b>
-  
-<img width="672" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/26df7397-c936-4e09-b975-1cf56d20b33c">
-</details>
+<img width="597" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/be7b222a-ea4b-409d-a966-fac739214f9e">
 
-<details>
-<summary><b>Common words are White and Light</b></summary>
-<b>This shows that the sightings are commonly associated with sparkling flash lights (especially at night). Maybe stars.</b>
-  
-<img width="359" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/1b2d8336-10f9-44d6-ab75-329ed152ad4d">
-
-</details>
-
-
-<details>
-<summary><b>More sigting near the airports</b></summary>
-<b> Sightings are commonly seen near commericial airports. here is an example from California and Nevada. Look at SFO, SJO, LAX, LAS.</b>
-  
-<img width="594" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/48fd063e-4d6a-4772-ac4e-18aba8a49300">
-
-<img width="601" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/f2d4b126-e2f6-4d4a-aeca-ef6b635b693d">
 
 </details>
 
 <details>
-<summary><b>Population and terrain based data</b></summary>
-<b> The more populated areas have more sigthings. The rough terrain areas have less sightings. <b>
+<summary><b>Top Hits</b></summary>
+  
+<b>Along with the season finales, the biggests hit was the "One that could have been" episode as it had the Biggest Cliff hanger in the history of modern Sitcoms</b>
+
+<img width="990" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/48ca0abd-ad5f-4f0f-87ce-5834d5f1a4e4">
+
+  
+</details>
+
+<details>
+<summary><b>Chandler alays close to Monica!</b></summary>
+<b>Chandler has always spent most of his scenes with Monica since the beginning, hinting at the future plot of their relationship</b>
+  
+<img width="1014" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/2aef6d8a-3ba1-4d60-aa25-01aa3cb2c498">
+
+
+</details>
+
+
+<details>
+<summary><b>A joyfull show</b></summary>
+<b> Most of the seasons finales are "Joyful" which tells a lot about the shows theme</b>
+
+  <img width="588" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/59a3f469-c516-4f84-a429-89887db8d160">
+
+
+</details>
+
+<details>
+<summary><b>Ross and Rachel</b></summary>
+<b> Both of their common words have always been each others names, which shows their relation <b>
  
-<img width="601" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/f2d4b126-e2f6-4d4a-aeca-ef6b635b693d">
+<img width="1382" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/349579b3-25d4-45c9-a6fc-4d2024029b70">
 
 </details>
 
@@ -314,66 +276,18 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 <summary><b>Libraries Used</b></summary>
  
 - [Javascript D3](https://d3js.org/)
- 
-- [Leaflet](https://leafletjs.com/)
-  
+   
 - [WordCloud](https://github.com/jasondavies/d3-cloud)
 </details>
 
-<details>
-<summary><b>Directory Structure</b></summary>
-  
-- CSS
-
-  - style.css: ALl the styling for index.html
-    
-- data
-
-  - ufo_sightings.csv: Origianl data for all the encounters, pulled from [National UFO Reporting Center](https://nuforc.org/).
-
-  - ufo_sightings_NMV.csv: Preproccessed Data with encounters filtered for US only, with no missing values.
- 
-  - most_common_words: Preproccessed data with the 50 most commonly used word in descripttions.
- 
-  - word_coordinates1.csv: Preprocessed data with latitude and longitude attributed with the most common words.
-    
-- js
-  
-  - Leaflet.js: Leaflet file
-    
-  - d3.v6.min.js: D3 file
-
-  - Leaflet.js-map: Leaflet map file
-
-  - LeafletMap.js: Leaflet map file with Leaflet class for displaying the map and filtering with brushing along with tooltip functionality. 
-    
-  - main.js: Runner file for .js files along with loading all the csv datasets using D3
-    
-  - ufo_encounter.js: .js file for visualizing the frequency of sightings by encounter length by using D3.js, and implementing an interactive brush for filtering data.
-    
-  - ufo_seasonal_patterns.js: .js file for visualizing the frequency of sightings by month by using D3.js, and implementing an interactive brush for filtering data by month on a bar graph.
-
-  - ufo_shaoe.js: .js file for visualizing the frequency of sightings by shape using custom shapes, and implementing an interactive brush for filtering data by shape on a bar chart.
-
-  - ufo_sightings.js: .js file for visualizing the timeline of sightings over the years, and implementing an interactive brush for selecting date ranges.
-
-  - ufoshapeplot.js: .js file for creating a bar chart visualization of UFO sightings categorized by shape and initializing the visualization with scales, axes, and brush functionality. 
-    
-- index.html: Runner page
-
-- README.md
-
-
-
-</details>
 
 
 
 <details>
 <summary><b>Future works</b></summary>
-<b>1. </b> looking at a way to add different map where the regions can be selected
+<b>1. </b> looking at a way add location specific data
 
-<b>2. </b> creating a uniform spaced maps with clickable bars
+<b>2. </b> creating a way to add episode links to the heatmap
 
 <b>3. </b> Improve styling and spacing in the page
   
@@ -387,21 +301,20 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 
   <b> Here are the components worked on by the Team:</b>
   
-  *  Introduction and Refresh: Saumick
-  *  Color By buttons: Nachiket
-  *  Leaflet Map and Re orientation: Saumick
-  *  Map Tool Tips: Saumick
-  *  Data preprocessing: Nachiket
-  *  Change maps by attribute: Saumick
-  *  Time Line + Brushing: Om
-  *  Sightings by Month + Brushing: Om
-  *  Sighting in a Day + Brushing: Om
-  *  Sightings by Encounter Length + Brushing: Nachiket + Saumick
-  *  Sightings by Shape + Brushing: Saumick
-  *  Word Cloud + Tool tips: Nachiket
-  *  Map Brushing: Nachiket
-  *  CSS, coloring and formatting maps: Saumick
+  *  Introduction, title and Refresh: Saumick
+  *  Song in background: Saumick
+  *  Populariy of Character graph: Saumick
+  *  Main drop downs: Saumick
+  *  Data preprocessing: Nachiket and Saumick
+  *  Heatmap Series Road Map with Popularity: Saumick
+  *  Inter Character Interaction per Episode: Saumick
+  *  Graph Top Emotions between Characters: Saumick
+  *  Character drop downs: Nachiket
+  *  Solo Word cloud: Nachiket
+  *  Character freq bar chart: Nachiket
+  *  Word Cloud for character interaction: Nachiket
+  *  CSS, coloring and formatting maps: Saumick + Nachiket
   *  Documentation: Saumick + Nachiket
-  *  Some UI Sketches: Ameya
+  *  UI Sketches: Saumick + Nachiket
     
  </details>
