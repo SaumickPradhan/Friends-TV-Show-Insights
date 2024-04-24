@@ -198,7 +198,6 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 <b>Select the characters you want to focus on</b>
 <img width="400" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/c41ad58f-eb6d-48e8-a554-23425c548b0b">
 
-<img width="1459" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/cb4635ec-b460-4688-a3a4-6448ed174a42">
 
 
 </details>
