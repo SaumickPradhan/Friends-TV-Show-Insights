@@ -3,12 +3,15 @@
 
 
 **A Interactive Data Visualization exploring various ascpects of the Hit TV show Friends. It helps the audience understand  the characters, how the characters interact, what they characters tend to say, and how these patterns change over the run of the show.**
-<img width="323" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/4e32d897-c555-4291-95a4-b2a25e97f6fc">![newApr-24-202400-16-19-ezgif com-video-to-gif-converter](https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/9554eadf-1683-420e-b4d1-caec30d4c295)
+
+<img width="323" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/4e32d897-c555-4291-95a4-b2a25e97f6fc">
+
+![newApr-24-202400-16-19-ezgif com-video-to-gif-converter](https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/9554eadf-1683-420e-b4d1-caec30d4c295)
 
 
-<h2>Description NACHIKET TO COMPLETE</h2>
+<h2>Description</h2>
 
-In our project, "UFO Sightings in United States: The Truth is out there" , we embarked on a journey to explore and visualize a comprehensive dataset compiled by the National UFO Reporting Center. This dataset, spanning over a century of reports from around the world, offers a unique window into the collective human experience with the unexplained aerial phenomena. We filtered the comprehensive dataset to provide us with information about UFO sightings in the United States, and used that to analyze the data and displayed it using a Leaflet map, along with 4 charts and a word cloud.
+In our project, "Friends-TV-Show-insights" , we embarked on a journey to explore various different interactions between charachters for the popular TV sitcom, 'Friends'. THe datasets used in this project were found on Kaggle and then was preprocessed using python and converted to JSON for ease of use. The datasets, spam over the 10 seasons that the show ran for, and provide information related to the emotions of the cast, phrases used by the cast, and overall interactions between the charachters. We filtered the data to provide us with more detailed information, and analyzied and displayed it using a Heatmap, arcmap, various bar charts and 2 word clouds.
 
 <h2>Video Presentation</h2>
 
@@ -71,11 +74,9 @@ Please find all the data preprocessing scripts and data files in the /data folde
 
 
  <details>
-  <summary><b>Motivation of the Project NACHIKET TO COMPLETE</b></summary>
+  <summary><b>Motivation of the Project </b></summary>
 
-The motivation for this project was to contribute to the knowledge about the existance of Extraterrestrial activity
-and contribute to the documentation and analysis of this cultural phenomenon, adding to the body of knowledge available for researchers, enthusiasts, and the curious alike. We also wanted to hone our data analysis skills in front-end frameworks like D3.Js and Leaflet.js along with using python to analyze and clean the dataset. This data also has first-hand encounters from real people via a reputable
-website. 
+The motivation for this project was to showcase information about the show "Friends", and add to the an already large body of knowledge publically avilable for the enthusiasts of the show. We also wanted to hone our data analysis skills in front-end frameworks like D3.JS and D3.Wordcloud.js along with using python to preprocess and clean the data. The dataset that we used also has ratings from real people via a reputable website.
 
 </details>
 
