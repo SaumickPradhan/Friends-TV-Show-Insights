@@ -207,7 +207,7 @@ function getColorForCharacterLines(lines) {
 }
 
 function getTooltipContent(lines) {
-  return `Lines Spoken: ${lines}`;
+  return `Rating Lines Spoken: ${lines}`;
 }
 
 // const heatmapData = [
