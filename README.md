@@ -118,22 +118,22 @@ NACHIKET TO COMPLETE
 <h2>Visualization components</h2>
 
 <details>
-  <summary><b>1. Header with Data and Tools used</b> </summary>
+  <summary><b>1. Heading with Title Track Playing to show Friends Theme</b> </summary>
   
-  <b>Heading with Intro, Data source and Tools used with Links</b>
+  <b>C Goals Heading with Intro for the show. The title show song plays in the background with a music player</b>
 
-![image](https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/3efde11a-4d05-4f7a-aa00-3f6a416f085b)
+<img width="791" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/7868fa55-a9eb-4a10-8601-2f9001ab7caa">
 
 </details>
 
 
 <details>
-  <summary><b>2. Reset Button</b> </summary>
+  <summary><b>2. Character, their popularity, influence in the show</b> </summary>
   
-  <b>Rest button to refresh the attributes and re align the page</b>
+  <b>Graph which shows the popularity of the Character is a particular Episode</b>
   
+<img width="580" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/bc203845-178f-47d9-a921-535236ec1bdf">
 
-![image](https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/19194f13-6060-4ebb-8083-957541254925)
 
 </details>
 
