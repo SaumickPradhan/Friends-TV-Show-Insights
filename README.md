@@ -132,7 +132,7 @@ NACHIKET TO COMPLETE
   
   <b>Graph which shows the popularity of the Character is a particular Episode</b>
   
-<img width="595" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/b47f6b16-d276-427c-a0b5-347e7cfb04a8">
+<img width="568" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/35cbc43b-1bc8-479b-b32b-210b0544a827">
 
 
 </details>
@@ -147,33 +147,30 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
 
 <details>
   <summary><b>4. Select Attributes</b> </summary>
-  <b> (C Goals) Dynamic dropdown to select season and episode from that season</b>
+  <b>  Dynamic dropdown to select season and episode from that season. The Arc Diagram, Popularity bar graph and emotions bar graphs are Linked</b>
 
 
 </details>
 
 
 <details>
-  <summary><b>5. Map</b> </summary>
-  <b> (C Goals) Default zoom and positoning of USA, color encoding for plots, highlights and word cloud, Details on Demand </b>
+  <summary><b>5. Series Road Map with Popularity Heat Map</b> </summary>
+  <b> Helps the user see the road map for the show, find out interesting episodes, their popularity based on Ratings by viewers talking about them "lines spoken" </b>
 
-![image](https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/17bca443-00e5-4db4-a101-103bc73aad42)
+<img width="1006" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/22457ca8-8fde-4e02-bec8-703dd631c806">
 
 </details>
 
 
 
 <details>
-  <summary><b>6. Timeline</b> </summary>
-  <b> (C Goals) Timeline by Year and number of sightings </b>
+  <summary><b>Inter Character Interaction per Episode with Arc Diagram</b> </summary>
+  <b> An Arc diagram to show relation between different characters in the selected episode </b>
 
-  <b> Reasons: </b>
-  * Small binned bars to show height and spikes
-  * Sorted by year
-  * Using it to brush the map
-  * Consulted professor on not having tool tip on timeline as we think it provides less utility. We deprecated the tool tip feature.
 
-![image](https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/17bca443-00e5-4db4-a101-103bc73aad42)
+
+<img width="1197" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/ca2a5810-9d8e-47a4-88c4-8cbabd66a6bb">
+
 
 </details>
 
