@@ -150,6 +150,9 @@ We decided to go with the famous color pallete from Friends which is Red, yellow
   <b>  Dynamic dropdown to select season and episode from that season. The Arc Diagram, Popularity bar graph and emotions bar graphs are Linked</b>
 
 
+<img width="396" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/922adc58-09ce-4f8f-82bc-97132bc4090c">
+
+
 </details>
 
 
