@@ -95,14 +95,18 @@ The motivation for this project was to showcase information about the show "Frie
 
 
 **B Goals sketches**
-NACHIKET TO COMPLETE
+
+<img width="660" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/88009707/71c16ba6-1e67-457c-8e5e-60b55cf2c4f6">
 
 **A goals**
-NACHIKET TO COMPLETE MORE
 
 <img width="660" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/16327b12-a5dd-4660-8a30-634b9f31cdf2">
 
 <img width="777" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/7f2dba9e-94f9-4488-818b-d85b6051179b">
+
+<img width="660" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/88009707/3ebb1cef-a7a7-45c3-95da-f8bd43a943cc">
+
+
 
 
 </details>
