@@ -29,12 +29,30 @@
   max-width: 100%; /* Ensure the bar chart width doesn't exceed the container width */
 }
 
+.bar1 {
+  fill: #dbde26;
+}
+
+
+.bar1:hover {
+  fill: steelblue;
+}
+
+.bar2 {
+  fill: #c75520;
+}
+
+.bar2:hover {
+  fill: steelblue;
+}
+
 .bar {
   fill: steelblue;
 }
 
+
 .bar:hover {
-  fill: #69b3a2;
+  fill: #dbde26;
 }
 
 .x-axis path {
@@ -53,7 +71,7 @@
 
 .link {
   fill: none;
-  stroke: #000;
+  stroke: #c75520;
   stroke-opacity: 0.6;
 }
         
