@@ -132,7 +132,7 @@ NACHIKET TO COMPLETE
   
   <b>Graph which shows the popularity of the Character is a particular Episode</b>
   
-<img width="580" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/bc203845-178f-47d9-a921-535236ec1bdf">
+<img width="595" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/b47f6b16-d276-427c-a0b5-347e7cfb04a8">
 
 
 </details>
@@ -141,24 +141,13 @@ NACHIKET TO COMPLETE
 <details>
   <summary><b>3. Color Section </b> </summary>
   
-We decided to go with the color pallete from Friends which is Red, yellow and blue.
+We decided to go with the famous color pallete from Friends which is Red, yellow and blue across all the Viz. Hence our hover is also one of these colors.
 </details>
 
 
 <details>
   <summary><b>4. Select Attributes</b> </summary>
-  <b> (C Goals) Buttons and drop down to select the set of 'color by' options for points on map and switch background </b>
-
-![image](https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/fc20d8e9-fcbc-49e6-a7da-54f35ad7f38a)
-
-<b> Reasons: </b>
-
-* Geo: How the geography (boundaries, rivers etc.) affects sightings
-* Topo: How the Topography (ridges and valleys etc.) affect sightings
-* Street: Is it more common to sight near cities or rural areas with less street?
-* Airport: More sightings near the airport?
-
-![image](https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/dbffdf7d-a1f7-4290-bbed-ab4ae1b8f6ad)
+  <b> (C Goals) Dynamic dropdown to select season and episode from that season</b>
 
 
 </details>
