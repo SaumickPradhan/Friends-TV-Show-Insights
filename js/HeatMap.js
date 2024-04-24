@@ -70,7 +70,8 @@ class HeatMap {
       parentElement: "#heatmap",
       width: 1000,
       height: 400,
-      margin: { top: 20, right: 20, bottom: 50, left: 50 },
+      margin: { top: 30, right: 20, bottom: 50, left: 50 },
+      title: "Series Road Map with Popularity"
     };
 
     this.initVis();
@@ -116,6 +117,14 @@ class HeatMap {
       .attr("x", vis.width / 2 + vis.config.margin.left)
       .attr("y", vis.height + vis.config.margin.bottom - 10)
       .text("Episode");
+
+      vis.svg
+      .append("text")
+      .attr("class", "heatmap-title")
+      .attr("x", vis.width / 2)
+      .attr("y", -vis.config.margin.top / 2)
+      .attr("text-anchor", "middle")
+      .text(vis.config.title);
 
     vis.svg
       .append("text")

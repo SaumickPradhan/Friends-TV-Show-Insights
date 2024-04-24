@@ -51,6 +51,14 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
           `translate(${vis.config.margin.left},${vis.config.margin.top})`
         );
     
+        vis.svg
+    .append("text")
+    .attr("class", "arc-diagram-title")
+    .attr("x", vis.width / 2)
+    .attr("y", vis.config.margin.top+100)
+    .attr("text-anchor", "middle")
+    .text("Inter Character Interaction per Episode");
+
       vis.xScale = d3.scalePoint().range([0, vis.width]).padding(1);
     
       vis.line = d3
@@ -70,6 +78,7 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
         .append("div")
         .attr("class", "detail-section")
         .style("visibility", "hidden");
+        
     
 
     
@@ -132,6 +141,9 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
         .attr("y", vis.height / 2 + 25)
         .style("text-anchor", "middle")
         .text((d) => d)
+
+      
+
         // .on("mouseover", function (event, d) {
         //   d3.select(this).attr("cursor", "default");
         //   vis.svg
@@ -179,6 +191,7 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
               const otherCharacter = link.characterA === d ? link.characterB : link.characterA;
               tooltipHtml += `<div>${otherCharacter}: ${link.scenes.length} scenes</div>`;
           });
+          
           vis.tooltip
               .style("visibility", "visible")
               .html(tooltipHtml)
@@ -220,6 +233,7 @@ d3.json("data/JsonRealemotions_friends.json").then(jsonData => {
         .attr("stroke-width", (d) => getStrokeWidth(d.scenes.length))
         .style("opacity", 0.7);
 
+        
 
         
     }
@@ -319,6 +333,13 @@ function createBarChart(data) {
     .attr("dx", "-.8em")
     .attr("dy", ".15em")
     .attr("transform", "rotate(-45)");
+
+    svg.append("text")
+  .attr("class", "bar-chart-title")
+  .attr("x", width / 2)
+  .attr("y", -margin.top / 2 +10)
+  .attr("text-anchor", "middle")
+  .text("Emotions between Characters");
   
   // X-axis label
   svg.append("text")
@@ -401,9 +422,9 @@ updateBarChart(1, 1); // Default to Season 1, Episode 1
 
 // Function to create the bar chart for character lines
 function createCharacterLinesChart(characterData) {
-  const margin = { top: 10, right: 30, bottom: 65, left: 60 };
+  const margin = { top: 30, right: 30, bottom: 75, left: 60 };
   const width = 600 - margin.left - margin.right;
-  const height = 300 - margin.top - margin.bottom;
+  const height = 400 - margin.top - margin.bottom;
   
   const svg = d3.select("#character-lines-chart")
     .append("svg")
@@ -434,6 +455,13 @@ function createCharacterLinesChart(characterData) {
     .attr("dx", "-.8em")
     .attr("dy", ".15em")
     .attr("transform", "rotate(-45)");
+
+    svg.append("text")
+    .attr("class", "character-lines-chart-title")
+    .attr("x", width / 2)
+    .attr("y", -margin.top / 2)
+    .attr("text-anchor", "middle")
+    .text("Populatrity of Characters");
   
   // X-axis label
   svg.append("text")
