@@ -141,23 +141,7 @@ NACHIKET TO COMPLETE
 <details>
   <summary><b>3. Color Section </b> </summary>
   
-For the color of dots on leaflet map:
-  - year : Used A linear color scale to represent years, with darker shades indicating older years and lighter shades for younger years.
-  - month : Used A sequential color scale to represent months, with different shades of green assigned to each month.
-  - Time of Day : Used Fixed colors for each :-  Morning: Yellow, Afternoon: Orange, Evening: Red, Night: Blue. 
-  - UFO shape: Used an ordinal color scale to represent different UFO shapes.
-
-For the color of the buttons: 
- - used bright green for all four buttons to keep the theme of alternating green/blue colors all over the website.
-
-For the colors present in Charts:
-- Used a mix of blue/green, traditionally used to represent extrateresstrial life. 
-- Each chart alternatives between blue and green.
-
-Filtering By WordCloud: 
-  - Used white to represent the changes in leaflet map, and indicate a clear change in selection. 
-
-
+We decided to go with the color pallete from Friends which is Red, yellow and blue.
 </details>
 
 
