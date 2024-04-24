@@ -86,41 +86,31 @@ website.
 
 **UI sketches**
 
-<img width="522" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/405d09b8-c849-4529-b206-96cdc4827c4b">
+<img width="553" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/45776895-8583-48c7-8153-fa64dde95dda">
 
-<img width="536" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/3c1c56f9-801b-4d81-af8f-bb257f180967">
+<img width="600" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/40dc4b91-f40c-4290-a68d-d5d0ce506c5a">
 
-<img width="520" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/cf7f3c98-ae6c-46ab-a7b8-464ff1830ca2">
 
-<img width="532" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/56b6d40f-a53a-4d79-86fb-61c4b0ff827f">
 
 
 **B Goals sketches**
+NACHIKET TO COMPLETE
 
-<img width="894" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/61dcdac2-f43e-4d5e-a139-3a1d59fb032e">
+**A goals**
+NACHIKET TO COMPLETE
 
-**Word Cloud**
+<img width="660" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/16327b12-a5dd-4660-8a30-634b9f31cdf2">
 
-<img width="337" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/02bf269b-6351-4d76-b0d2-a4ed9edd8b20">
-
-<img width="587" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/ea016774-bbfc-4b43-b6d5-b41ad44b4250">
-
-
-
-**Sentiment Analysis**
-
-<img width="428" alt="image" src="https://github.com/SaumickPradhan/USA-UFO-Sightings-VIZ/assets/85262444/797459a9-eed2-49ac-b57e-8a90f78110f9">
-
-
+<img width="777" alt="image" src="https://github.com/SaumickPradhan/Friends-TV-Show-Insights/assets/85262444/7f2dba9e-94f9-4488-818b-d85b6051179b">
 
 
 </details>
 
 <details><summary><b>Design Specification</b></summary>
 
-* Used a linear page scrollable format (changed our original grid based format) as we wanted a linear flow of selections instead of multiple views together. This facilitiates our story flow during our case studies and findings, mentioned later. 
-* Have a story-like feel to the selcted/ brushed plots and result is tracked on the top
-* Intutive tool tips with brushing on all
+* Used a linear page scrollable format (changed our original grid based format) as we wanted a linear story flow of selections instead of multiple views together. This facilitiates our story flow during our case studies and findings, mentioned later. 
+* Have a story-like feel with the ability to select the episodes and season which is tracked on the top
+* Intutive tool tips on all
 * More info about design specifications to follow
 
 </details>
