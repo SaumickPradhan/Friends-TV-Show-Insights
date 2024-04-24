@@ -454,7 +454,7 @@ function createCharacterLinesChart(characterData) {
     .attr("x", -height / 2)
     .attr("y", -margin.left + 20)
     .style("text-anchor", "middle")
-    .text("No. of Lines Spoken in selected episode");
+    .text("Popularity of Character in selected episode");
   
   svg.selectAll(".bar")
     .data(characterData)
